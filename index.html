@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Consultation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Astrology Consultation</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Birth Chart Reading</li>
+                <li>Daily Horoscope</li>
+                <li>Compatibility Analysis</li>
+                <li>Personalized Forecast</li>
+            </ul>
+        </section>
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Birth Chart Reading</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Daily Horoscope</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Compatibility Analysis</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Personalized Forecast</td>
+                    <td>$120</td>
+                </tr>
+            </table>
+        </section>
+        <section id="booking">
+            <h2>Book a Consultation</h2>
+            <form action="/book" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="service">Service:</label>
+                <select id="service" name="service">
+                    <option value="birth-chart">Birth Chart Reading</option>
+                    <option value="daily-horoscope">Daily Horoscope</option>
+                    <option value="compatibility">Compatibility Analysis</option>
+                    <option value="forecast">Personalized Forecast</option>
+                </select>
+                <input type="submit" value="Book Now">
+            </form>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to <a href="mailto:info@astrology.com">email us</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Astrology Consultations</p>
+    </footer>
+</body>
+</html>
